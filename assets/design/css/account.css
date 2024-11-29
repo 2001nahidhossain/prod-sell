@@ -1,0 +1,293 @@
+
+
+/* Form fields and elements */
+.form__container {
+
+}
+
+.auth-block {
+    width: 480px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid #8fb1fd;
+    background: rgba(231, 243, 251, 0.38);
+    border-radius: 10px;
+}
+
+.s-form-account {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+    border: 2px dashed rgb(149 156 161);
+    background-color: rgb(231, 243, 251);
+    border-radius: 20px;
+}
+
+.s-form-account_setting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+}
+@media all and (max-width: 772px){
+    .s-form-account_setting {
+        grid-template-columns: 1fr;
+    }
+}
+
+.s-form-border {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.s-form-header {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.s-form-header_space {
+    margin-bottom: 15px;
+}
+.s-form-row {display: flex; flex-direction: column; gap: 8px 0;}
+.s-form-row span[role="alert"] {width: 100%; padding: 5px; margin:8px 0 0 0; border:1px solid #ffc9c9; color: darkred; font-size: 12px; border-radius: 6px;}
+.s-form-inputbox {flex:1; position: relative;}
+.s-form-label {
+    display:block;
+    padding: 0;
+    font-weight: bold;
+    font-size:14px;
+    color: #00345b;
+    text-align: left;
+}
+.s-form-label::after {content: ':';}
+.s-form-label .req {font-weight:bold; color: red;}
+.s-form-inputs-group {display: flex; align-items: center;}
+.s-form-inputs-group .s-form-input:first-child {flex: 1;}
+.s-form-input {flex:1; position: relative;}
+
+.emutation__select-icon {
+    width: 20px; height: 20px; content: ' '; display: block; color: #000;
+    position: absolute; right: 10px; top: 50%;
+    pointer-events: none; transform:translateY(-52%) rotate(90deg);
+}
+
+.s-form-input-remove {
+    width:20px; height:20px;
+    position: absolute; left: 8px; top: 50%; margin: -10px 0 0 0;
+    cursor: pointer;
+}
+.s-form-input-remove .ics {
+    width: auto; height: auto;
+    position: absolute; left: 2px; right: 2px; top: 2px; bottom: 2px;
+    color: #ff661e;
+}
+.s-form-input-remove .ics:hover {
+    color: #53b2cb;
+}
+.s-form-input .s-form-input-remove + input {padding-left: 34px;}
+.s-form-info {margin:-6px 0 6px 2px; font-size:11px; opacity: 0.8;}
+.s-form-links {margin:5px 0 0 0; color:#a4a4a4; text-align:center;}
+.s-form-links:last-child {margin-bottom: 0;}
+.s-form-other {font-size:16px; text-align:center;}
+.s-form-scl-auth {margin:13px 0 0 0; text-align:center;}
+.s-form-scl-auth .s-button {
+    height:36px; line-height:36px;
+    border-radius:8px;
+}
+.s-form-checkeds > li + li {margin-top: 6px;}
+
+.s-form-block + .s-form-button {
+    margin-top: 20px;
+}
+.s-form-button {
+    text-align:center;
+}
+.s-form-button .button {
+    min-width: 138px;
+}
+
+.s-form-telegram {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+}
+
+.s-form-captcha {display:flex; align-items:center; justify-content: center; margin:15px 0; text-align: center;}
+
+
+.s-form-inputbox .invalid-feedback {display:block; margin: 5px 0 0 5px; font-size: 12px; color: red;}
+
+.account-balance {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.account-tabs {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 34px 0;
+    text-align: center;
+}
+.account-tabs .button {
+    flex:1 0;
+    min-width: 100px;
+}
+.account-tabs .button.current {
+    color: #008fff;
+}
+.account-tabs .button.current::after {
+    background: #e7f3fb;
+}
+
+
+.badge {
+    padding: 5px 12px;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #eee;
+    border-radius: 8px;
+}
+.badge-sm {
+    padding: 3px 8px;
+    font-size: 12px;
+}
+.badge-success {
+    background: #e7fbe7;
+}
+.badge-danger {
+    background: #fbe7e8;
+}
+.badge-warning {
+    background: #f9fbe7;
+}
+
+
+.account-deposits {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.account-deposits-form {
+    flex:none;
+}
+.account-deposits-form .auth-block {
+    width: 100%;
+}
+.account-deposits-history {
+    flex:none;
+}
+
+
+
+
+.partners-block {
+    padding: 22px;
+    display: flex;
+    gap: 25px;
+    margin: 0 0 35px 0;
+}
+@media all and (max-width: 1072px) {
+    .partners-block {
+        flex-direction: column;
+    }
+}
+.partners-block::after {
+    order: 2;
+    flex: none;
+    width: 1px;
+    content: " ";
+    background: repeating-linear-gradient(to bottom, transparent, transparent 3px, #aab2ba 8px, #fff 3px);
+}
+@media all and (max-width: 1072px) {
+    .partners-block::after {
+        width: 100%;
+        height: 1px;
+        background: repeating-linear-gradient(to right, transparent, transparent 3px, #aab2ba 8px, #fff 3px);
+    }
+}
+.partners-block__desc {
+    order: 1;
+    flex: 1 0;
+    font-size: 15px;
+}
+.partners-block__form {
+    order: 3;
+    flex: none;
+    width: 588px;
+}
+@media all and (max-width: 1072px) {
+    .partners-block__form {
+        width: 100%;
+    }
+}
+.partners-block-stats {
+    display: flex;
+    margin: 28px 0 40px 0;
+}
+@media all and (max-width: 672px) {
+    .partners-block-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .partners-block-stats .form-label_start {
+        margin-bottom: 6px;
+    }
+}
+.partners-block-stats-item {
+    flex: 1 0;
+}
+.partners-block-stats-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+.partners-block-withdraw {
+    gap: 20px 11px;
+}
+@media all and (max-width: 672px) {
+    .partners-block-withdraw {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.partners-block-checkout {
+    display: flex;
+    align-items: flex-end;
+    margin: 30px 0 0 0;
+}
+@media all and (max-width: 672px) {
+    .partners-block-checkout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.partners-block-balance {
+    flex: 1 0;
+}
+.partners-block-balance-value {
+    margin: -4px 0 0 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+.partners-block-control {
+    flex: none;
+}
+.partners-block-button {
+    min-height: 42px;
+    font-size: 16px;
+}
